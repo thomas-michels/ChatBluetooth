@@ -6,13 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:layout_width="401dp"
+        android:layout_height="453dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="5dp">
+
+        <Button
+            android:id="@+id/btnConectar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2046AA"
+            android:padding="5dp"
+            android:paddingTop="5dp"
+            android:scrollHorizontally="false"
+            android:text="Conectar"
+            android:textSize="14sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+        <TextView
+            android:id="@+id/lbl_texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensagem"
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+        <EditText
+            android:id="@+id/tf_comandos"
+            android:layout_width="290dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:inputType="textShortMessage" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
